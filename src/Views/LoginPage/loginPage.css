@@ -1,0 +1,45 @@
+.backgroundImage {
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 120px 0;
+    display: flex!important;
+    align-items: center;
+}
+
+.backgroundImageOverlay {
+    background-color: rgba(0,0,0, 0.4);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: auto;
+    min-height: 100vh;
+}
+
+.loginContainer {
+    width: 100vh;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginContainerContext {
+    width: 100%;
+    max-width: 350px;
+}
+
+@media(max-width: 750px) {
+    .loginContainerContext {
+        max-width: 85%;
+    }
+}
